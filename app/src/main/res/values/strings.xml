@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">MUSD_Assignment</string>
+    <string name="app_name">Movie Rater</string>
+    <string name="add_movie">You have not added a movie \nLong Press me to add a movie</string>
 </resources>

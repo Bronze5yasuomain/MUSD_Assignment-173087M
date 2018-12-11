@@ -1,89 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="345dp"
-        android:background="@color/colorHeaderBackground"
-        android:text="MovieRater"
-        android:textColor="@color/colorWhiteText"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/buttonAddMovie"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textViewName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Name"
-        android:textColor="@color/colorGreyText"
-        app:layout_constraintBottom_toTopOf="@+id/editTextName"
-        app:layout_constraintStart_toStartOf="@+id/title"
-        app:layout_constraintTop_toBottomOf="@+id/title" />
+        android:textColor="@color/colorGreyText" />
 
 
     <EditText
         android:id="@+id/editTextName"
-        android:layout_width="0dp"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/textViewDescription"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewName" />
+        android:inputType="textPersonName" />
 
     <TextView
         android:id="@+id/textViewDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Description"
-        android:textColor="@color/colorGreyText"
-        app:layout_constraintBottom_toTopOf="@+id/editTextDescription"
-        app:layout_constraintStart_toStartOf="@+id/editTextName"
-        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+        android:textColor="@color/colorGreyText" />
 
     <EditText
         android:id="@+id/editTextDescription"
-        android:layout_width="0dp"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textMultiLine"
-        app:layout_constraintBottom_toTopOf="@+id/textViewLanguage"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewDescription" />
+        android:inputType="textMultiLine" />
 
     <TextView
         android:id="@+id/textViewLanguage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Language"
-        android:textColor="@color/colorGreyText"
-        app:layout_constraintBottom_toTopOf="@+id/radioGroupLang"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextDescription" />
+        android:textColor="@color/colorGreyText" />
 
     <RadioGroup
         android:id="@+id/radioGroupLang"
         android:layout_width="328dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/textViewReleaseDate"
-        app:layout_constraintStart_toStartOf="@+id/textViewLanguage"
-        app:layout_constraintTop_toBottomOf="@+id/textViewLanguage">
+        android:orientation="horizontal">
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -115,70 +80,41 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Release Date"
-        android:textColor="@color/colorGreyText"
-        app:layout_constraintBottom_toTopOf="@+id/editTextReleaseDate"
-        app:layout_constraintStart_toStartOf="@+id/radioGroupLang"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroupLang" />
+        android:textColor="@color/colorGreyText" />
 
     <EditText
         android:id="@+id/editTextReleaseDate"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="date"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewReleaseDate" />
+        android:inputType="date" />
 
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="244dp"
-        android:text="Not suitable for all audience"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/editTextReleaseDate"
-        app:layout_constraintTop_toBottomOf="@+id/editTextReleaseDate" />
+        android:text="Not suitable for all audience" />
 
     <CheckBox
         android:id="@+id/checkBox2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="7dp"
         android:text="Violence"
-        android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+        android:visibility="invisible" />
 
     <CheckBox
         android:id="@+id/checkBox3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginTop="7dp"
         android:visibility="invisible"
-        android:text="Language used"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+        android:text="Language used" />
 
     <Button
         android:id="@+id/buttonAddMovie"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="125dp"
-        android:layout_marginEnd="6dp"
-        android:layout_marginLeft="6dp"
-        android:layout_marginRight="6dp"
-        android:layout_marginStart="6dp"
-        android:text="Add Movie"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title"
-        app:layout_constraintVertical_bias="1.0" />
+        android:text="Add Movie" />
 
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
