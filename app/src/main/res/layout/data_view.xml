@@ -1,106 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/ic_launcher"
-        tools:layout_editor_absoluteX="164dp"
-        tools:layout_editor_absoluteY="38dp" />
+        app:srcCompat="@mipmap/ic_launcher" />
 
     <TextView
         android:id="@+id/textViewTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Title:"
-        android:textSize="16dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="118dp" />
+        android:textSize="16dp" />
 
     <TextView
         android:id="@+id/textViewTitleInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Venom"
-        android:textSize="20dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="147dp" />
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/textViewOverview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Overview:"
-        android:textSize="16dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="182dp" />
+        android:textSize="16dp" />
 
     <TextView
         android:id="@+id/textViewOverviewInput"
         android:layout_width="367dp"
         android:layout_height="wrap_content"
         android:text="When Eddie Brock acquires the powers of a symbiote, he will have to release his alter-ego Venom to save his life."
-        android:textSize="20dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="214dp" />
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/textLanguageShown"
         android:layout_width="wrap_content"
         android:layout_height="23dp"
         android:text="Language:"
-        android:textSize="16dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="289dp" />
+        android:textSize="16dp" />
 
     <TextView
         android:id="@+id/textViewLanguageShowInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="English"
-        android:textSize="20dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="316dp" />
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/textViewRDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Release date:"
-        android:textSize="16dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="344dp" />
+        android:textSize="16dp" />
 
     <TextView
         android:id="@+id/textViewRDateInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="03-10-2018"
-        android:textSize="20dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="376dp" />
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/textViewAgeRestriction"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Suitable for children below 13:"
-        android:textSize="16dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="412dp" />
+        android:textSize="16dp" />
 
     <TextView
         android:id="@+id/textViewAgeRestrictionInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Yes"
-        android:textSize="20dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="443dp" />
-</android.support.constraint.ConstraintLayout>
+        android:textSize="20dp" />
+</LinearLayout>
